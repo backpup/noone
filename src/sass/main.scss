@@ -1,0 +1,20 @@
+@mixin breakpoint($point) {
+  @if $point == papa-bear {
+    @media (min-width: 1600px) { @content; }
+  }
+  @else if $point == midscreen {
+    @media (max-width: 768px) { @content; }
+  }
+  @else if $point == smallscreen {
+    @media (max-width: 450px)  { @content; }
+  }
+}
+
+body {
+  font-family:verdana, Arial, Helvetica, Sans-serif;
+  font-size:12px;
+}
+
+h1 {
+  color:blue;
+}
